@@ -69,6 +69,6 @@ class QueensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def queen_params
-      params.require(:queen).permit(:name, :bio, :city, :age, :image, :avatar)
+      params.require(:queen).permit(:name, :bio, :city, :age, :image, :avatar, :twitter)
     end
 end
