@@ -16,8 +16,8 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @queen.image %>
+  <strong>Avatar:</strong>
+  <img src="<%= @queen.avatar %>" alt="<%= @queen.name %>" style="max-width: 400px">
 </p>
 
 <%= link_to 'Edit', edit_queen_path(@queen) %> |

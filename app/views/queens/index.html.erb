@@ -19,7 +19,7 @@
         <td><%= queen.name %></td>
         <td><%= queen.bio %></td>
         <td><%= queen.city %></td>
-        <td><%= queen.image %></td>
+        <td><img src="<%= queen.avatar %>" alt="<%= queen.name %>" style="max-width: 150px"</td>
         <td><%= link_to 'Show', queen %></td>
         <td><%= link_to 'Edit', edit_queen_path(queen) %></td>
         <td><%= link_to 'Destroy', queen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
