@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
   resources :queens
+
+  root :to => "pages#home"
+
+  Rails.application.routes.draw do
+    get "/pages/:page" => "pages#show"
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

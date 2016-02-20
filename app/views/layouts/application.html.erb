@@ -45,41 +45,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Rdr</a>
+        <a class="navbar-brand" href="/">Rupaul's Drag Race Fan App</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
+          <ul class="nav navbar-nav" style="float:right">
+            <li><%= link_to "Queens", queens_path  %></li>
+            <li><%= link_to "Social", "/pages/social"  %></li>
+            <li><%= link_to "Vote", "/pages/vote"  %></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <%= bootstrap_flash %>
-          <%= yield %>
-        </div>
-        <div class="col-lg-3">
-          <div class="well sidebar-nav">
-            <h3>Sidebar</h3>
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
+  <%= bootstrap_flash %>
+  <%= yield %>
 
-      <footer>
-        <p>&copy; Company 2016</p>
-      </footer>
-
-    </div> <!-- /container -->
+<footer>
+  <p>&copy; Just-a-student-app 2016</p>
+</footer>
 
   </body>
 </html>
