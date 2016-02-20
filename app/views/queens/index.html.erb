@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Queens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Bio</th>
+      <th>City</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @queens.each do |queen| %>
+      <tr>
+        <td><%= queen.name %></td>
+        <td><%= queen.bio %></td>
+        <td><%= queen.city %></td>
+        <td><%= queen.image %></td>
+        <td><%= link_to 'Show', queen %></td>
+        <td><%= link_to 'Edit', edit_queen_path(queen) %></td>
+        <td><%= link_to 'Destroy', queen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Queen', new_queen_path %>
